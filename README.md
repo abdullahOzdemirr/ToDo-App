@@ -39,22 +39,23 @@ Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları t
 
     Projenin ana dizinine (kök dizine) .env adında bir dosya oluşturun ve gerekli ortam değişkenlerini tanımlayın:
 
-    DB_URL=jdbc:postgresql://localhost:5432/postgres
-    DB_USERNAME=postgres
-    DB_PASSWORD=veritabani_sifreniz
-    MAIL_HOST=smtp.gmail.com
-    MAIL_PORT=587
-    MAIL_USERNAME=eposta_adresiniz
-    MAIL_PASSWORD=eposta_sifreniz
-    JWT_SECRET=cok_gizli_ve_uzun_jwt_anahtariniz
+-    DB_URL=jdbc:postgresql://localhost:5432/postgres
+-    DB_USERNAME=postgres
+-    DB_PASSWORD=veritabani_sifreniz
+-    MAIL_HOST=smtp.gmail.com
+-    MAIL_PORT=587
+-    MAIL_USERNAME=eposta_adresiniz
+-    MAIL_PASSWORD=eposta_sifreniz
+-    JWT_SECRET=cok_gizli_ve_uzun_jwt_anahtariniz
 
 3. **Projeyi Başlatın:**
 
     IntelliJ IDEA, VS Code veya terminal üzerinden Maven kullanarak projeyi çalıştırın:
 
-    mvn spring-boot:run
+-    mvn spring-boot:run
 
 ## 📖 API Dokümantasyonu (Swagger UI)
 
-    Uygulama ayakta iken API uç noktalarını görsel olarak incelemek ve test etmek için tarayıcınızdan şu adrese gidebilirsiniz:
+-     Uygulama ayakta iken API uç noktalarını görsel olarak incelemek ve test etmek için tarayıcınızdan şu adrese gidebilirsiniz:
+
     http://localhost:8080/swagger-ui/index.html
