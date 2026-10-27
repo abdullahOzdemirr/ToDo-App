@@ -57,6 +57,8 @@ Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları t
 -    Windows: mvnw spring-boot:run
 -    Mac / Linux: ./mvnw spring-boot:run
 
+---
+
 ## 📖 API Dokümantasyonu (Swagger UI)
 
 Uygulama ayakta iken API uç noktalarını görsel olarak incelemek ve test etmek için tarayıcınızdan şu adrese gidebilirsiniz:
