@@ -33,11 +33,12 @@ Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları t
 
 1. **Projeyi Klonlayın:**
 
-   git clone
+   git clone https://github.com/abdullahOzdemirr/ToDo-App.git
 
-2. **.env Dosyası Oluşturun:**
-
-    Projenin ana dizinine (kök dizine) .env adında bir dosya oluşturun ve gerekli ortam değişkenlerini tanımlayın:
+2. **Veritabanı ve Ortam Ayarları:**
+    Projenizin yapılandırmasını iki farklı şekilde yapabilirsiniz:
+    Seçenek A: application.properties dosyasından bilgileri girin.
+    Seçenek B (.env ile): Projenin ana dizinine (kök dizine) .env adında bir dosya oluşturarak gerekli değişkenleri tanımlayın:
 
 -    DB_URL=jdbc:postgresql://localhost:5432/postgres
 -    DB_USERNAME=postgres
@@ -50,12 +51,14 @@ Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları t
 
 3. **Projeyi Başlatın:**
 
-    IntelliJ IDEA, VS Code veya terminal üzerinden Maven kullanarak projeyi çalıştırın:
+    IntelliJ IDEA üzerinden: Projedeki ToDoApplication.java dosyasını açın ve yeşil Run butonuna basın.
+    Ya da Maven Wrapper üzerinden terminale şunu yazabilirsiniz:
 
--    mvn spring-boot:run
+-    Windows: mvnw spring-boot:run
+-    Mac / Linux: ./mvnw spring-boot:run
 
 ## 📖 API Dokümantasyonu (Swagger UI)
 
--     Uygulama ayakta iken API uç noktalarını görsel olarak incelemek ve test etmek için tarayıcınızdan şu adrese gidebilirsiniz:
+Uygulama ayakta iken API uç noktalarını görsel olarak incelemek ve test etmek için tarayıcınızdan şu adrese gidebilirsiniz:
 
     http://localhost:8080/swagger-ui/index.html
