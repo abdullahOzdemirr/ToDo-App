@@ -1,0 +1,12 @@
+package com.SpringUygulama.ToDo.repository;
+
+import com.SpringUygulama.ToDo.entity.Task;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface TaskRepository extends JpaRepository<Task,Long> {
+    List<Task> findByCategory_CategoryId(Long categoryId);
+
+    List<Task> findByUser_UserId(Long userId);
+}
